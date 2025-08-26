@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Löbern</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-front">
+        <li class="text">Front</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-eg-eingang">
+        <li class="text">EG Eingang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-keller-entre">
+        <li class="text">Keller Entre</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-keller-korridor">
+        <li class="text">Keller Korridor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-keller-1">
+        <li class="text">Keller 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-keller-2">
+        <li class="text">Keller 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-keller-3">
+        <li class="text">Keller 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-keller-4">
+        <li class="text">Keller 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-keller-5">
+        <li class="text">Keller 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-keller-boiler">
+        <li class="text">Keller Boiler</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-ausgang-keller-4">
+        <li class="text">Ausgang Keller 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-eg-vorzone">
+        <li class="text">EG Vorzone</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-eg-bro">
+        <li class="text">EG Büro</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-eg-wc">
+        <li class="text">EG WC</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-eg-wohnzimmer-1">
+        <li class="text">EG Wohnzimmer 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-eg-wohnzimmer-2">
+        <li class="text">EG Wohnzimmer 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-eg-kchen">
+        <li class="text">EG Küchen</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-eg-1-og-podest">
+        <li class="text">EG-1 OG Podest</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-1-og-wc-1">
+        <li class="text">1 OG WC 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-1-og-kinder-1">
+        <li class="text">1 OG Kinder 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-1-og-kinder-2">
+        <li class="text">1 OG Kinder 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-1-og-eltern">
+        <li class="text">1 OG Eltern</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-1-og-eltern-ankleide">
+        <li class="text">1 OG Eltern Ankleide</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-1-og-eltern-bad">
+        <li class="text">1 OG Eltern Bad</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-1og-vorzone">
+        <li class="text">1OG Vorzone</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-1og-2og-podest">
+        <li class="text">1OG-2OG Podest</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-2-og-1">
+        <li class="text">2 OG 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-2-og-2">
+        <li class="text">2 OG 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-2-og-3">
+        <li class="text">2 OG 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-garten">
+        <li class="text">Garten</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-veranda">
+        <li class="text">Veranda</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
